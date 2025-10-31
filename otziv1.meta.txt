@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/otziv1.png
+Status: 200
+Content-Type: image/png
+File-Extension: png
+Size: 50404 bytes
+Scan-Time: 2025-10-11T19:20:35.921591
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:36 GMT",
+  "Content-Type": "image/png",
+  "Content-Length": "50404",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 03 Sep 2025 20:30:17 GMT",
+  "ETag": "\"68b8a559-c4e4\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

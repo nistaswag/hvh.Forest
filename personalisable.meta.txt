@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/personalisable.svg
+Status: 200
+Content-Type: image/svg+xml
+File-Extension: svg
+Size: 2597 bytes
+Scan-Time: 2025-10-11T19:20:37.804233
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:38 GMT",
+  "Content-Type": "image/svg+xml",
+  "Content-Length": "2597",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 09 Jul 2025 13:46:25 GMT",
+  "ETag": "\"686e72b1-a25\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/servers/1.png
+Status: 200
+Content-Type: image/png
+File-Extension: png
+Size: 43165 bytes
+Scan-Time: 2025-10-11T19:20:51.832583
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:52 GMT",
+  "Content-Type": "image/png",
+  "Content-Length": "43165",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 03 Sep 2025 17:48:43 GMT",
+  "ETag": "\"68b87f7b-a89d\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

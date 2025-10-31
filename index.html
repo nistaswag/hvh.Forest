@@ -1,0 +1,1732 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Zenith</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="1lr7RpiQT9df8mfpedJKcq3Nk8sxbf6TaRshq4co">
+    <meta name="description" content="Zenith">
+    <link rel="icon" type="image/png" href="https://hvh.moscow/assets/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://hvh.moscow/build/assets/app-D6HYvAQ8.css" /><link rel="stylesheet" href="https://hvh.moscow/build/assets/app-D6HYvAQ8.css" />        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <style>
+    .loader {
+        display: none;
+        width: 50px;
+        padding: 8px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #266CD6;
+        --_m:
+            conic-gradient(#0000 10%,#000),
+            linear-gradient(#000 0 0) content-box;
+        -webkit-mask: var(--_m);
+        mask: var(--_m);
+        -webkit-mask-composite: source-out;
+        mask-composite: subtract;
+        animation: l3 1s infinite linear;
+    }
+    @keyframes l3 {to{transform: rotate(1turn)}}
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+<div class="bg-[#0F0C1A] min-h-screen flex flex-col bg-[url(/assets/landing.jpg)] bg-no-repeat bg-cover" id="main">
+    
+      <div
+    class="relative z-10 mx-auto flex items-center justify-between rounded-[16px] rounded-t-none border-[1px] border-t-0 border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.04)_0%,_rgba(255,_255,_255,_0.02)_100%)] px-[14px] py-[20px] md:px-[24px] md:py-[28px] backdrop-blur-[48px] md:container gap-[18px] md:gap-[unset]"
+  >
+    <a class="flex" href="/">
+      <img src="/assets/logo.svg" class="h-[26.67px] w-[22.67px]" />
+      <div class="ml-[12px] font-semibold text-white">Zenith</div>
+    </a>
+
+    <div class="flex">
+          <button
+        data-micromodal-trigger="modal-reg"
+        class="flex cursor-pointer items-center gap-x-[7px] rounded-[16px] border-[1px] border-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[8px] py-[8px] md:px-[14px] md:py-[12px] text-[14px] font-medium text-white/48 backdrop-blur-[48px]"
+      >
+        Регистрация
+        <img src="/assets/signup.svg" class="h-[14px] w-[14px]" />
+      </button>
+
+      <button
+        data-micromodal-trigger="modal-login"
+        class="ml-[12px] flex cursor-pointer items-center gap-x-[7px] rounded-[16px] bg-[linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] px-[8px] py-[8px] md:px-[14px] md:py-[12px] text-[14px] font-medium text-white outline2"
+      >
+        Вход
+        <img src="/assets/login.svg" class="h-[14px] w-[14px]" />
+      </button>
+        </div>
+  </div>
+  <div class="flex-1">
+    <div class="relative z-20 container mx-auto mt-[40px] md:mt-[100px] lg:mt-[194px]">
+  <button
+            data-micromodal-trigger="modal-reg"
+          class="z-10 mx-auto flex h-[38px] cursor-pointer items-center gap-x-[4px] rounded-[20px] border-[1px] border-[#967cf32f] bg-[url('/assets/pattern.svg')] text-[12px] font-medium text-white backdrop-blur-[48px] before:absolute before:inset-0 before:-z-10 before:rounded-[16px] before:bg-[linear-gradient(180deg,rgba(255,255,255,0.06)_0%,rgba(255,255,255,0.04)_100%)] before:backdrop-blur-[96px] before:content-[''] after:absolute after:inset-0 after:-z-10 after:bg-[url('/assets/pattern-white.svg')] after:bg-cover after:bg-center after:opacity-100 after:content-['']"
+  >
+    <svg class="mx-[12px] z-20" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.5 0.5C11.0899 0.5 14 3.41015 14 7C14 10.5899 11.0899 13.5 7.5 13.5C3.91015 13.5 1 10.5899 1 7C1 3.41015 3.91015 0.5 7.5 0.5Z" stroke="#957CF3" stroke-opacity="0.24" class="st1" />
+    <path d="M7.5 2.5C9.98528 2.5 12 4.51472 12 7C12 9.48528 9.98528 11.5 7.5 11.5C5.01472 11.5 3 9.48528 3 7C3 4.51472 5.01472 2.5 7.5 2.5Z" stroke="#957CF3" stroke-opacity="0.48" class="st2" />
+    <path d="M4.5 7C4.5 5.34315 5.84315 4 7.5 4C9.15685 4 10.5 5.34315 10.5 7C10.5 8.65685 9.15685 10 7.5 10C5.84315 10 4.5 8.65685 4.5 7Z" fill="url(#paint0_linear_301_5223)"/>
+    <defs>
+    <linearGradient id="paint0_linear_301_5223" x1="7.5" y1="4" x2="7.5" y2="10" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#B29DFF"/>
+    <stop offset="1" stop-color="#957CF3"/>
+    </linearGradient>
+    </defs>
+    </svg>
+
+    Зарегистрируйтесь сейчас и получите скидку 10%
+    <img src="/assets/button.svg" class="px-[4px]" />
+  </button>
+
+  <div class="mt-[30px] text-center md:mt-[48px]">
+    <h1 class="text-[36px] font-semibold text-white md:text-[72px]">
+      Zenith: Добро Пожаловать На
+      <span
+        class="[background-image:linear-gradient(180deg,#B29DFF_0%,#957CF3_100%)] bg-clip-text text-transparent"
+        >Вершину.</span
+      >
+      <span
+        class="mt-2 block text-[18px] font-normal text-white/48 md:text-[24px]"
+        >Вы прибыли. Zenith — это не просто клиент — это ваш вход
+        <span class="text-white/72">в элитный</span>
+        уровень игрового процесса.
+      </span>
+    </h1>
+
+    <a
+      href="#products"
+      class="outline-border mx-auto mt-[30px] flex h-[55px] w-[260px] cursor-pointer items-center justify-center gap-x-[8px] rounded-[14px] bg-[linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] text-[16px] font-medium text-white md:mt-[48px]"
+    >
+      <img src="/assets/buy.svg" class="h-[16px] w-[16px]" />
+      Купить сейчас!
+    </a>
+  </div>
+
+  <div class="mt-[50px] md:mt-[130px] lg:mt-[194px] py-[25px] md:py-[45px] lg:py-[59px]">
+    <section class="" aria-labelledby="carousel-heading">
+      <div class="overflow-hidden slider__wrapper p-[3px]">
+        <ul class="slider__container">
+                    <li class="embla__slide rounded-[8px]">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/1.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">mc.aresmine.ru</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/2.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">mc.reallyworld.ru</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/3.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">play.sunmc.ru</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/4.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">hub.holyworld.ru</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/5.jpg"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">play.vontam.su</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/6.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">play.nexusmine.org</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/7.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">mc.hypixel.net</p>
+            </div>
+          </li>
+                    <li class="embla__slide rounded-[8px]">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/1.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">mc.aresmine.ru</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/2.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">mc.reallyworld.ru</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/3.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">play.sunmc.ru</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/4.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">hub.holyworld.ru</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/5.jpg"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">play.vontam.su</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/6.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">play.nexusmine.org</p>
+            </div>
+          </li>
+          <li class="embla__slide">
+            <div class="group flex flex-col items-center">
+            <img
+              src="/assets/servers/7.png"
+              class="outline-border-s size-[88px] rounded-[8px]"
+            />
+            <p class="opacity-0 transition-all duration-300 mt-[8px] text-white/24 text-[12px] leading-[12px] group-hover:opacity-100">mc.hypixel.net</p>
+            </div>
+          </li>
+                  </ul>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div
+class="container mx-auto h-[1px] w-[416px] self-center bg-white/6"
+></div>
+
+<div class="relative z-10 container mx-auto py-[40px] lg:py-[128px]">
+<div
+  class=" flex flex-col justify-between gap-[30px] text-center md:flex-row md:gap-0"
+>
+  <div
+    class="group relative flex flex-col items-center text-[48px] font-medium text-white gap-[8px]"
+  >
+    <div class="bg-icon bg-[url('/assets/user.svg')]"></div>
+    <div class="bg-icon bg-[url('/assets/user.svg')] opacity-0 group-hover:left-[0px] group-hover:opacity-100 group-hover:size-[80px]"></div>
+    <div class="bg-icon bg-[url('/assets/user.svg')] opacity-0 group-hover:left-[100%] group-hover:opacity-100 group-hover:size-[80px]"></div>
+    <p class="leading-[100%]">
+      5,000<span
+        class="[background-image:linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] bg-clip-text text-transparent"
+        >+</span
+      >
+    </p>
+    <span class="text-[24px] font-normal text-white/72 leading-[100%]">
+      Активных <br />
+      Пользователей
+    </span>
+  </div>
+
+  <div
+    class="h-[1px] w-[150px] self-center bg-white/6 md:h-[92px] md:w-[1px]"
+  ></div>
+
+  <div
+    class="group relative flex flex-col items-center text-[48px] font-medium text-white  gap-[8px]"
+  >
+    <div class="bg-icon bg-[url('/assets/uptime.svg')]"></div>
+    <div class="bg-icon bg-[url('/assets/uptime.svg')] opacity-0 group-hover:left-[0px] group-hover:opacity-100 group-hover:size-[80px]"></div>
+    <div class="bg-icon bg-[url('/assets/uptime.svg')] opacity-0 group-hover:left-[100%] group-hover:opacity-100 group-hover:size-[80px]"></div>
+    <p class="leading-[100%]">
+      99.99<span
+        class="[background-image:linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] bg-clip-text text-transparent"
+        >%</span
+      >
+    </p>
+    <span class="text-[24px] font-normal text-white/72 leading-[100%]">Uptime</span>
+  </div>
+
+  <div
+    class="h-[1px] w-[150px] self-center bg-white/6 md:h-[92px] md:w-[1px]"
+  ></div>
+
+  <div
+    class="group relative flex flex-col items-center text-[48px] font-medium text-white  gap-[8px]"
+  >
+    <div class="bg-icon bg-[url('/assets/feedback.svg')]"></div>
+    <div class="bg-icon bg-[url('/assets/feedback.svg')] opacity-0 group-hover:left-[0px] group-hover:opacity-100 group-hover:size-[80px]"></div>
+    <div class="bg-icon bg-[url('/assets/feedback.svg')] opacity-0 group-hover:left-[100%] group-hover:opacity-100 group-hover:size-[80px]"></div>
+    <p class="leading-[100%]">
+      95<span
+        class="[background-image:linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] bg-clip-text text-transparent"
+        >%</span
+      >
+    </p>
+    <span class="text-[24px] font-normal text-white/72 leading-[100%]"
+      >Положительных <br />
+      Отзывов</span
+    >
+  </div>
+
+  <div
+    class="h-[1px] w-[150px] self-center bg-white/6 md:h-[92px] md:w-[1px]"
+  ></div>
+
+  <div
+    class="group relative flex flex-col items-center text-[48px] font-medium text-white  gap-[8px]"
+  >
+    <div class="bg-icon bg-[url('/assets/discord.svg')]"></div>
+    <div class="bg-icon bg-[url('/assets/discord.svg')] opacity-0 group-hover:left-[0px] group-hover:opacity-100 group-hover:size-[80px]"></div>
+    <div class="bg-icon bg-[url('/assets/discord.svg')] opacity-0 group-hover:left-[100%] group-hover:opacity-100 group-hover:size-[80px]"></div>
+    <p class="leading-[100%]">
+      20,000<span
+        class="[background-image:linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] bg-clip-text text-transparent"
+        >+</span
+      >
+    </p>
+    <span class="text-[24px] font-normal text-white/72 leading-[100%]">Пользователей</span>
+  </div>
+</div>
+</div>
+
+<div
+class="relative z-10 container mx-auto h-[1px] w-[416px] self-center bg-white/6"
+></div>
+
+<div class="relative z-10 container mx-auto py-[40px] lg:py-[128px]">
+<div class="flex items-center justify-between">
+  <div class="">
+    <div class="flex lg:flex-row flex-col justify-between gap-[30px] lg:gap-[128px]">
+      <div class="">
+        <div class="flex items-center gap-[12px]">
+          <img
+            src="/assets/about.svg"
+            class="size-[24px] lg:size-[16px]"
+          />
+          <span class="text-[24px] font-medium text-white lg:text-[16px]"
+            >О нас</span
+          >
+        </div>
+        <div
+          class="mt-[20px] flex flex-col justify-between gap-[40px] lg:mt-[48px] lg:flex-row lg:gap-0"
+        >
+          <div class="max-w-[645px]">
+            <h1 class="mb-[12px] text-[48px] font-medium text-white leading-[100%]">
+              Почему мы?
+            </h1>
+            <span class="text-[24px] font-normal text-white/72 leading-[100%]"
+              >Идеальный набор инструментов для доминирования. Мощные функции,
+              непревзойдённая производительность и надёжная безопасность.
+            </span>
+            <div class="mt-[24px] flex">
+              <div class="flex gap-[6px]">
+                <img src="/assets/undetectable.svg" />
+                <span class="text-[14px] font-normal text-white/48"
+                  >Необнаруживаемый</span
+                >
+              </div>
+
+              <div class="ml-[12px] flex gap-[6px]">
+                <img src="/assets/powerful.svg" />
+                <span class="text-[14px] font-normal text-white/48"
+                  >Мощный</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+          class="flex-1 h-[231px] w-full rounded-[16px] border-[1px] border-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[8px] py-[8px] text-white/4 backdrop-blur-[48px] lg:h-full lg:w-[410px]"
+      >
+        <img
+          src="/assets/maskirovka3.png"
+          class="h-full w-full rounded-[16px] object-cover"
+        />
+      </div>
+    </div>
+
+    <div class="mt-[48px]">
+      <div
+        class="grid grid-cols-1 justify-items-center gap-[12px] lg:grid-cols-3 lg:justify-items-start"
+      >
+        <div class="why-card">
+          <div
+            class="z-20 flex items-center gap-x-[20px] gap-y-[4px] px-[18px] py-[4px]"
+          >
+            <img
+              src="/assets/personalisable.svg"
+              class="size-[32px]"
+            />
+            <div class="flex flex-col">
+              <span class="text-[18px] font-medium text-white"
+                >Персонализируемый</span
+              >
+              <p class="text-[14px] font-normal text-white/72">
+                Создайте идеальный интерфейс.<br />
+                Настройте цвета.
+              </p>
+            </div>
+            <span class="ml-auto text-[36px] font-medium text-white/12"
+              >1</span
+            >
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div
+            class="z-20 flex items-center gap-x-[20px] gap-y-[4px] px-[18px] py-[4px]"
+          >
+            <img
+              src="/assets/configurable.svg"
+              class="size-[32px]"
+            />
+            <div class="flex flex-col">
+              <span class="text-[18px] font-medium text-white"
+                >Настраиваемый</span
+              >
+              <p class="text-[14px] font-normal text-white/72">
+                Точно настройте каждый модуль в соответствии с вашими
+                потребностями.
+              </p>
+            </div>
+            <span class="ml-auto text-[36px] font-medium text-white/12"
+              >2</span
+            >
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div
+            class="z-20 flex items-center gap-x-[20px] gap-y-[4px] px-[18px] py-[4px]"
+          >
+            <img src="/assets/adaptable.svg" class="size-[32px]" />
+            <div class="flex flex-col">
+              <span class="text-[18px] font-medium text-white"
+                >Адаптируемый</span
+              >
+              <p class="text-[14px] font-normal text-white/72">
+                Поддерживает все популярные версии игр.
+              </p>
+            </div>
+            <span class="ml-auto text-[36px] font-medium text-white/12"
+              >3</span
+            >
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div
+            class="z-20 flex items-center gap-x-[20px] gap-y-[4px] px-[18px] py-[4px]"
+          >
+            <img src="/assets/uptime_card.svg" class="size-[32px]" />
+            <div class="flex flex-col">
+              <span class="text-[18px] font-medium text-white">Uptime</span>
+              <p class="text-[14px] font-normal text-white/72">
+                Всегда онлайн с мгновенными обновлениями.
+              </p>
+            </div>
+            <span class="ml-auto text-[36px] font-medium text-white/12"
+              >4</span
+            >
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div
+            class="z-20 flex items-center gap-x-[20px] gap-y-[4px] px-[18px] py-[4px]"
+          >
+            <img src="/assets/security.svg" class="size-[32px]" />
+            <div class="flex flex-col">
+              <span class="text-[18px] font-medium text-white"
+                >Безопасность</span
+              >
+              <p class="text-[14px] font-normal text-white/72">
+                Обеспечивает безопасность вашей учетной записи и данных.
+              </p>
+            </div>
+            <span class="ml-auto text-[36px] font-medium text-white/12"
+              >5</span
+            >
+          </div>
+        </div>
+
+        <div class="why-card">
+          <div
+            class="z-20 flex items-center gap-x-[20px] gap-y-[4px] px-[18px] py-[10px]"
+          >
+            <img src="/assets/translation.svg" class="size-[32px]" />
+            <div class="flex flex-col">
+              <span class="text-[18px] font-medium text-white"
+                >Перевод</span
+              >
+              <p class="text-[14px] font-normal text-white/72">
+                Доступно на нескольких языках.
+              </p>
+            </div>
+            <span class="ml-auto text-[36px] font-medium text-white/12"
+              >6</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div
+class="relative z-10 container mx-auto h-[1px] w-[416px] self-center bg-white/6"
+></div>
+
+<div class="relative z-10 container mx-auto py-[40px] lg:py-[128px]">
+<div class="flex items-center justify-between">
+  <div class="">
+
+    <div
+      class="flex flex-col justify-center gap-[40px] lg:flex-row lg:gap-[48px]"
+    >
+      <div class="flex flex-col justify-center max-w-[568px]">
+        <div class="flex items-center gap-x-[12px]">
+          <img
+            src="/assets/design.svg"
+            class="size-[24px] lg:size-[16px]"
+          />
+          <span class="text-[24px] font-medium text-white lg:text-[16px]"
+            >Дизайн</span
+          >
+        </div>
+
+        <h1 class="mb-[12px] mt-[30px] text-[48px] font-medium text-white leading-[100%]">
+          Чистейший интерфейс
+        </h1>
+        <span class="text-[24px] font-normal text-white/72 leading-[100%]"
+          >Мощному клиенту не нужен захламлённый экран. Наш интерфейс создан
+          для максимальной скорости. Никаких отвлекающих элементов.
+        </span>
+        <div class="mt-[25px] flex">
+          <div class="flex gap-[6px]">
+            <img src="/assets/minimalism.svg" />
+            <span class="text-[14px] font-normal text-white/48"
+              >Минимализм</span
+            >
+          </div>
+
+          <div class="ml-[12px] flex gap-[6px]">
+            <img src="/assets/intuitive.svg" />
+            <span class="text-[14px] font-normal text-white/48"
+              >Интуитивный</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex-1 h-[400px] w-full rounded-[16px] border-[1px] border-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[8px] py-[8px] text-white/4 backdrop-blur-[48px] lg:w-[555px] lg:h-full"
+      >
+        <img
+          src="/assets/screenshot-client.png"
+          class="h-full w-full rounded-[16px] object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div
+class="relative z-10 container mx-auto h-[1px] w-[416px] self-center bg-white/6"
+></div>
+
+<div class="relative z-10 container mx-auto py-[40px] lg:py-[128px]">
+<div class="flex items-center justify-between gap-[48px]">
+  <div class="">
+    <div
+      class="flex flex-col justify-between gap-[40px] lg:flex-row lg:gap-0"
+    >
+      <div class="max-w-[568px] flex flex-col justify-center">
+        <div class="flex items-center gap-x-[12px]">
+          <img
+            src="/assets/community.svg"
+            class="size-[24px] lg:size-[16px]"
+          />
+          <span class="text-[24px] font-medium text-white lg:text-[16px] leading-[100%]"
+            >Сообщество</span
+          >
+        </div>
+        
+        <h1 class="mt-[30px] lg:mt-[48px] mb-[12px] text-[48px] font-medium text-white leading-[100%]">
+          Довольные клиенты
+        </h1>
+        <span class="text-[24px] font-normal text-white/72 leading-[100%]"
+          >Не верьте нам на слово. Вот что говорят наши пользователи о
+          доминировании с Zenith.
+        </span>
+        <div class="mt-[25px] flex">
+          <div class="flex gap-[6px]">
+            <img src="/assets/trusted.svg" />
+            <span class="text-[14px] font-normal text-white/48"
+              >Надёжный</span
+            >
+          </div>
+
+          <div class="ml-[12px] flex gap-[6px]">
+            <img src="/assets/unrivaled.svg" />
+            <span class="text-[14px] font-normal text-white/48"
+              >Непревзойдённый</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="flex-col w-fit gap-[24px] masked-box hidden lg:flex"
+  >
+    <div class="review-card flex flex-col gap-[18px] p-[18px]">
+      <div class="flex gap-[18px] items-center">
+        <div class="outline-border-a flex-none rounded-full">
+          <img
+            src="/assets/avatar.png"
+            class="size-[42px] rounded-full"
+          />
+        </div>
+        <div class="flex flex-col">
+          <p class="text-white leading-[100%]">t.me/jbdsgn</p>
+          <p class="text-white/48 leading-[100%]">Beta</p>
+        </div>
+      </div>
+      <div class="text-white/72 leading-[100%]">Производительность просто невероятная. FPS не падает даже на загруженных серверах. Интерфейс очень понятный и легко настраивается, что является огромным плюсом. Разработчики явно знают своё дело.</div>
+    </div>
+
+    <div class="review-card flex flex-col gap-[18px] p-[18px]">
+      <div class="flex gap-[18px] items-center">
+        <div class="outline-border-a flex-none rounded-full">
+          <img
+            src="/assets/skypl1ne.png"
+            class="size-[42px] rounded-full"
+          />
+        </div>
+        <div class="flex flex-col">
+          <p class="text-white leading-[100%]">skypl1ne</p>
+          <p class="text-white/48 leading-[100%]">Beta</p>
+        </div>
+      </div>
+      <div class="text-white/72 leading-[100%]">Отличный софт, идеально подходит под ХолиВорлд и для игры на других проектах. Оптимизация и функционал на высшем уровне! Имеется множество функций, которых нет у конкурентов, короче говоря, плотный рябчик ❤️</div>
+    </div>
+
+    <div class="review-card flex flex-col gap-[18px] p-[18px]">
+      <div class="flex gap-[18px] items-center">
+        <div class="outline-border-a flex-none rounded-full">
+          <img
+            src="/assets/otziv1.png"
+            class="size-[42px] rounded-full"
+          />
+        </div>
+        <div class="flex flex-col">
+          <p class="text-white leading-[100%]">Smertnix</p>
+          <p class="text-white/48 leading-[100%]">Beta</p>
+        </div>
+      </div>
+      <div class="text-white/72 leading-[100%]">Не ну чит в принципе ээ, чит заебись так то да, только минус жи есть что перевода на казахский нету, без базару чит фартовый, осы клиент үшін өз анамды сататын едім (что то не внятное на казахском).</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div
+class="relative z-10 container mx-auto h-[1px] w-[416px] self-center bg-white/6"
+></div>
+
+<div class="relative z-10 container mx-auto mt-[40px] lg:mt-[128px]">
+<div class="flex flex-col items-center justify-center" id="products">
+  <span class="text-[48px] font-medium text-white">Цены</span>
+  <p class="mt-[12px] text-center text-[24px] font-normal text-white/72">
+    Выберите свой путь к господству.
+  </p>
+
+  
+</div>
+
+<!-- NOTE: d2 - if there are 4 products, then remove 'items-start' -->
+<div
+  class="grid grid-cols-1 justify-start justify-items-center gap-[24px] mt-[48px]  lg:flex lg:items-start"
+>
+  <div class="relative bg-border-radial rounded-[8px] p-[1px] pr-[1.49px]  pb-0">
+    <div class="rounded-[8px] bg-[#0F0C1A]">
+      <div
+        class="relative z-0 flex max-w-[378.67px] flex-col gap-[24px] rounded-[8px] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] backdrop-blur-[48px] before:absolute before:h-full before:w-full before:bg-no-repeat before:rounded-[8px] before:bg-[url('/assets/card_product_background.svg')]"
+      >
+        <div class="relative z-10 px-[18px] py-[18px]">
+          <div class="flex items-center gap-x-[9px]">
+            <img src="/assets/basic_ico.svg" class="size-[18px]" />
+            <span class="text-[18px] font-medium text-white">Zenith 30</span>
+          </div>
+          <p class="text-[12px] font-normal text-white/72">
+            Идеальное начало для любого игрока. Включает все необходимые боевые
+            и вспомогательные модули, которые вам нужны.
+          </p>
+
+          <div class="mt-[18px] flex flex-col">
+                          <span class="price-group text-[36px] font-medium text-white">
+                <span data-month="389" data-year="4668">389</span><span
+                  class="[background-image:linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] bg-clip-text text-transparent"
+                  >₽</span
+                >
+                <span class="self-end text-[14px] font-normal text-white/48"
+                  >/ в месяц</span
+                >
+              </span>
+                      </div>
+          <div class="mx-auto mt-[18px] h-[1px] bg-white/6"></div>
+
+          <div class="mt-[18px] flex flex-col gap-y-[10px]">
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white">PayPal</span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white">Cash App</span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white">Gift Cards</span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white"
+                >Cryptocurrency
+              </span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white"
+                >Credit/Debit Cards
+              </span>
+            </div>
+          </div>
+
+          <div class="mt-[48px]">
+            <button
+              data-micromodal-trigger="modal-login"
+              data-product-id="1"
+              data-product-name="Zenith 30"
+              class="outline-border-c mt-[48px] flex w-full cursor-pointer items-center justify-center gap-x-[8px] rounded-[8px] bg-[linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] p-[16px] text-[16px] font-medium text-white"
+            >
+              <img src="/assets/buy.svg" class="h-[16px] w-[16px]" />
+              Купить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative bg-border-radial-gold rounded-[8px] p-[1px]  pb-0">
+    <div class="rounded-[8px] bg-[#0F0C1A]">
+      <div
+        class="relative z-0  flex max-w-[378.67px] flex-col gap-[24px] rounded-[8px] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] backdrop-blur-[48px] before:absolute before:h-full before:w-full before:bg-no-repeat before:rounded-[8px] before:bg-[url('/assets/buy_yellow_card.svg')]"
+      >
+        <div class="relative z-10 px-[18px] py-[18px]">
+          <div class="flex items-center gap-x-[9px]">
+            <img src="/assets/card_beta_logo_yellow.svg" class="size-[18px]" />
+            <span class="text-[18px] font-medium text-white">Zenith LifeTime</span>
+          </div>
+          <p class="text-[12px] font-normal text-white/72">
+            Только для настоящих энтузиастов. Этот уровень предоставляет вам эксклюзивный ранний доступ к нашим самым инновационным функциям и экспериментальным сборкам. Будьте первым, кто протестирует наши будущие разработки и оставит отзыв, который напрямую повлияет на развитие Zenith.
+          </p>
+
+          <div class="mt-[18px] flex flex-col">
+                          <span class="price-group text-[36px] font-medium text-white">
+                <span data-month="989" data-year="11868">989</span><span
+                  class="[background-image:linear-gradient(180deg,_#FFD2A7_0%,_#F3B77C_100%)] bg-clip-text text-transparent"
+                  >₽</span
+                >
+                <span class="self-end text-[14px] font-normal text-white/48"
+                  >/ навсегда</span
+                >
+              </span>
+                      </div>
+          <div class="mx-auto mt-[18px] h-[1px] bg-white/6"></div>
+
+          <div class="mt-[18px] flex flex-col gap-y-[10px]">
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success_yellow.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white">PayPal</span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success_yellow.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white">Cash App</span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success_yellow.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white">Gift Cards</span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success_yellow.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white"
+                >Cryptocurrency
+              </span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success_yellow.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white"
+                >Credit/Debit Cards
+              </span>
+            </div>
+          </div>
+
+          <div class="mt-[48px]">
+            <button
+              data-micromodal-trigger="modal-login"
+              data-product-id="2"
+              data-product-name="Zenith LifeTime"
+              class="outline-border-c-y mt-[48px] flex w-full cursor-pointer items-center justify-center gap-x-[8px] rounded-[8px] bg-[linear-gradient(180deg,_#FFD2A7_0%,_#F3B77C_100%)] p-[16px] text-[16px] font-medium text-white"
+            >
+              <img src="/assets/buy.svg" class="h-[16px] w-[16px]" />
+              Купить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative bg-border-radial rounded-[8px] p-[1px] pr-[1.01px] pb-0">
+    <div class="rounded-[8px] bg-[#0F0C1A]">
+      <div
+        class="relative z-0 flex max-w-[378.67px] flex-col gap-[24px] rounded-[8px] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] backdrop-blur-[48px] before:absolute before:h-full before:w-full before:bg-no-repeat before:rounded-[8px] before:bg-[url('/assets/card_product_background.svg')]"
+      >
+        <div class="relative z-10 px-[18px] py-[18px]">
+          <div class="flex items-center gap-x-[9px]">
+            <img src="/assets/basic_ico.svg" class="size-[18px]" />
+            <span class="text-[18px] font-medium text-white">Zenith 3 месяца</span>
+          </div>
+          <p class="text-[12px] font-normal text-white/72">
+            Идеальное начало для любого игрока. Включает все необходимые боевые
+            и вспомогательные модули, которые вам нужны.
+          </p>
+
+          <div class="mt-[18px] flex flex-col">
+                          <span class="price-group text-[36px] font-medium text-white">
+                <span data-month="689" data-year="8268">689</span><span
+                  class="[background-image:linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] bg-clip-text text-transparent"
+                  >₽</span
+                >
+                <span class="self-end text-[14px] font-normal text-white/48"
+                  >/ в месяц</span
+                >
+              </span>
+                      </div>
+          <div class="mx-auto mt-[18px] h-[1px] bg-white/6"></div>
+
+          <div class="mt-[18px] flex flex-col gap-y-[10px]">
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white">PayPal</span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white">Cash App</span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white">Gift Cards</span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white"
+                >Cryptocurrency
+              </span>
+            </div>
+            <div class="flex items-center gap-x-[9px]">
+              <img src="/assets/success.svg" class="size-[14px]" />
+              <span class="text-[14px] font-medium text-white"
+                >Credit/Debit Cards
+              </span>
+            </div>
+          </div>
+
+          <div class="mt-[48px]">
+            <button
+              data-micromodal-trigger="modal-login"
+              data-product-id="4"
+              data-product-name="Zenith 3 месяца"
+              class="outline-border-c mt-[48px] flex w-full cursor-pointer items-center justify-center gap-x-[8px] rounded-[8px] bg-[linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] p-[16px] text-[16px] font-medium text-white"
+            >
+              <img src="/assets/buy.svg" class="h-[16px] w-[16px]" />
+              Купить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div
+class="modal micromodal-slide relative z-20"
+id="modal-reg"
+aria-hidden="true"
+>
+<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+  <div
+    class="relative mx-auto min-h-[337px] max-w-[508px] rounded-[12px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0.02)_100%)] p-[24px] backdrop-blur-[48px] md:w-[508px]"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-1-title"
+  >
+    <header class="mb-[16px] items-center text-center">
+      <button
+        class="absolute top-[25px] right-[25px] h-[16px] w-[16px] cursor-pointer"
+        data-micromodal-close
+      >
+        <svg class="h-full w-full text-white transition-all duration-200 opacity-[0.48] hover:opacity-[1] hover:text-[#B29DFF]" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.1953 3.36177C12.4556 3.10142 12.8776 3.10142 13.138 3.36177C13.3983 3.62212 13.3983 4.04412 13.138 4.30447L8.94268 8.49979L13.138 12.6951L13.1836 12.7459C13.3971 13.0077 13.3821 13.3937 13.138 13.6378C12.8939 13.8819 12.5079 13.8969 12.2461 13.6834L12.1953 13.6378L7.99997 9.4425L3.80466 13.6378C3.54431 13.8982 3.1223 13.8982 2.86195 13.6378C2.6016 13.3775 2.6016 12.9554 2.86195 12.6951L7.05726 8.49979L2.86195 4.30447C2.6016 4.04412 2.6016 3.62212 2.86195 3.36177C3.1223 3.10142 3.54431 3.10142 3.80466 3.36177L7.99997 7.55708L12.1953 3.36177Z" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <h1 class="text-[16px] font-medium text-white">Создать аккаунт</h1>
+
+      <p
+        class="mt-[6px] flex justify-center text-[14px] font-normal text-white/72"
+      >
+        Добро пожаловать! Давайте настроим ваш аккаунт.
+      </p>
+    </header>
+
+    <main class="modal__content" id="modal-1-content">
+      <div class="mt-[24px]">
+        <div class="flex flex-col gap-y-[6px]">
+          <div
+            class="flex transition-all duration-200 h-[40px] items-center gap-x-[7px] rounded-[8px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[14px] py-[12px] backdrop-blur-[48px]"
+          >
+            <svg id="regEmail_icon" class="transition-colors duration-200 text-white/24 size-[14px]" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.91666 2.5415H4.08332C2.33332 2.5415 1.16666 3.4165 1.16666 5.45817V9.5415C1.16666 11.5832 2.33332 12.4582 4.08332 12.4582H9.91666C11.6667 12.4582 12.8333 11.5832 12.8333 9.5415V5.45817C12.8333 3.4165 11.6667 2.5415 9.91666 2.5415ZM10.1908 6.094L8.36499 7.55234C7.97999 7.8615 7.48999 8.01317 6.99999 8.01317C6.50999 8.01317 6.01416 7.8615 5.63499 7.55234L3.80916 6.094C3.62249 5.94234 3.59332 5.66234 3.73916 5.47567C3.89082 5.289 4.16499 5.254 4.35166 5.40567L6.17749 6.864C6.62082 7.21984 7.37332 7.21984 7.81666 6.864L9.64249 5.40567C9.82916 5.254 10.1092 5.28317 10.255 5.47567C10.4067 5.66234 10.3775 5.94234 10.1908 6.094Z" fill="currentColor"/>
+</svg>
+
+            <input
+            id="regEmail"
+              placeholder="Email"
+              type="email"
+              class="w-full bg-none text-white placeholder:bg-none focus:outline-none"
+            />
+          </div>
+
+          <div
+            class="flex transition-all duration-200 h-[40px] items-center gap-x-[7px] rounded-[8px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[14px] py-[12px] backdrop-blur-[48px]"
+          >
+            <svg id="regLogin_icon" class="transition-colors duration-200 text-white/24 size-[14px]" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.33332 3.99984C9.33332 5.2885 8.28865 6.33317 6.99999 6.33317C5.71133 6.33317 4.66666 5.2885 4.66666 3.99984C4.66666 2.71117 5.71133 1.6665 6.99999 1.6665C8.28865 1.6665 9.33332 2.71117 9.33332 3.99984Z" fill="currentColor" />
+<path d="M11.0833 10.9998C11.0833 12.2885 9.25515 13.3332 6.99999 13.3332C4.74483 13.3332 2.91666 12.2885 2.91666 10.9998C2.91666 9.71117 4.74483 8.6665 6.99999 8.6665C9.25515 8.6665 11.0833 9.71117 11.0833 10.9998Z" fill="currentColor" />
+</svg>
+
+            <input
+            id="regLogin"
+              placeholder="Логин"
+              type="text"
+              class="w-full bg-none text-white placeholder:bg-none focus:outline-none"
+            />
+          </div>
+
+          <div
+            class="flex transition-all duration-200 h-[40px] items-center gap-x-[7px] rounded-[8px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[14px] py-[12px] backdrop-blur-[48px]"
+          >
+            <svg id="regPass_icon" class="transition-colors duration-200 text-white/24 size-[14px]" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7 1.6665C10.4409 1.6665 10.8391 3.83116 10.8391 5.46168V6.64219C12.2894 6.81648 12.6875 7.51952 12.6875 9.39743V10.5219C12.6875 12.7709 12.1188 13.3332 9.84375 13.3332H4.15625C1.88125 13.3332 1.3125 12.7709 1.3125 10.5219V9.39743C1.3125 7.51952 1.71063 6.81648 3.16094 6.64219V5.46168C3.16094 3.83116 3.55906 1.6665 7 1.6665ZM5.12879 9.5605C4.96955 9.40308 4.71937 9.35252 4.50894 9.44245C4.435 9.47056 4.37808 9.5099 4.32121 9.5605C4.27002 9.61673 4.23023 9.67862 4.20179 9.74609C4.17337 9.81355 4.15625 9.8866 4.15625 9.95968C4.15625 10.1059 4.21884 10.252 4.32121 10.3589C4.37808 10.4095 4.435 10.4488 4.50894 10.4769C4.57718 10.505 4.65108 10.5219 4.725 10.5219C4.87287 10.5219 5.02073 10.4601 5.12879 10.3589C5.23117 10.252 5.29375 10.1059 5.29375 9.95968C5.29375 9.8866 5.27663 9.81355 5.24821 9.74609C5.21977 9.67862 5.17998 9.61673 5.12879 9.5605ZM7.40379 9.5605C7.18767 9.35247 6.80665 9.35247 6.59621 9.5605C6.49384 9.66733 6.43125 9.80787 6.43125 9.95968C6.43125 10.0328 6.44837 10.1058 6.47679 10.1733C6.50523 10.2407 6.54502 10.3026 6.59621 10.3589C6.70427 10.4601 6.84644 10.5219 7 10.5219C7.14787 10.5219 7.29573 10.4601 7.40379 10.3589C7.45498 10.3026 7.49477 10.2407 7.52321 10.1733C7.55163 10.1058 7.56875 10.0328 7.56875 9.95968C7.56875 9.80787 7.50617 9.66733 7.40379 9.5605ZM9.67879 9.5605C9.46835 9.35247 9.08734 9.35247 8.87121 9.5605C8.76884 9.66733 8.70625 9.80787 8.70625 9.95968C8.70625 10.1115 8.76884 10.252 8.87121 10.3589C8.97927 10.4601 9.12713 10.5219 9.275 10.5219C9.42288 10.5219 9.57073 10.4601 9.67879 10.3589C9.78117 10.252 9.84375 10.1059 9.84375 9.95968C9.84375 9.92594 9.83833 9.88647 9.83264 9.84712C9.82695 9.81342 9.81525 9.77979 9.79821 9.74609C9.78684 9.71239 9.76982 9.67864 9.74711 9.65055C9.72436 9.61682 9.70154 9.58861 9.67879 9.5605ZM7 2.50988C4.52025 2.50988 4.01406 3.6906 4.01406 5.46168V6.58618H9.98594V5.46168C9.98594 3.6906 9.47975 2.50988 7 2.50988Z" fill="currentColor" />
+</svg>
+
+            <input
+            id="regPass"
+              placeholder="Пароль"
+              type="password"
+              class="w-full bg-none text-white placeholder:bg-none focus:outline-none"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-[12px]">
+        <div class="flex items-center justify-end">
+          <button
+          data-micromodal-trigger="modal-login"
+            class="inline-block bg-gradient-to-b from-[#B29DFF] to-[#957CF3] bg-clip-text text-[14px] font-semibold text-transparent"
+          >
+            Уже есть аккаунт?
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="modal__footer mt-[24px]">
+        <div class="mx-auto flex items-center justify-center mb-[24px]">
+        <div class="g-recaptcha" style="align-self: center;" data-sitekey="6LehLrYrAAAAACwIS0g8Zl9qnt6AuE14IEXFVnWx" data-callback="javascriptCallback"></div>
+        </div>
+        <div class="mx-auto flex items-center justify-center loader-block">
+        <div class="loader"></div>
+        </div>
+
+      <div class="mx-auto flex items-center justify-center gap-x-[6px]">
+        <button
+          id="btnRegister"
+          class="mx-auto flex h-[40px] w-[75%] cursor-pointer items-center justify-center gap-x-[6px] rounded-[6px] bg-[linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] text-[16px] font-medium text-white"
+        >
+          <img src="/assets/signup_white.svg" class="size-[14px]" />
+          Зарегистрироваться
+        </button>
+
+        <button
+          data-micromodal-trigger="modal-login"
+          class="mx-auto flex h-[40px] w-[25%] cursor-pointer items-center justify-center gap-x-[6px] rounded-[6px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] text-[16px] font-medium text-white/48 backdrop-blur-[48px]"
+        >
+          <img src="/assets/footer_login.svg" class="size-[14px]" />
+          Вход
+        </button>
+      </div>
+    </footer>
+  </div>
+</div>
+</div>
+
+<div
+class="modal micromodal-slide relative z-20"
+id="modal-login"
+aria-hidden="true"
+>
+<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+  <div
+    class="relative mx-auto min-h-[337px] w-[508px] rounded-[12px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0.02)_100%)] p-[24px] backdrop-blur-[48px] md:max-w-[508px]"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-1-title"
+  >
+    <header class="mb-[16px] items-center text-center">
+      <button
+        class="absolute top-[25px] right-[25px] h-[16px] w-[16px] cursor-pointer"
+        data-micromodal-close
+      >
+        <svg class="h-full w-full text-white transition-all duration-200 opacity-[0.48] hover:opacity-[1] hover:text-[#B29DFF]" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.1953 3.36177C12.4556 3.10142 12.8776 3.10142 13.138 3.36177C13.3983 3.62212 13.3983 4.04412 13.138 4.30447L8.94268 8.49979L13.138 12.6951L13.1836 12.7459C13.3971 13.0077 13.3821 13.3937 13.138 13.6378C12.8939 13.8819 12.5079 13.8969 12.2461 13.6834L12.1953 13.6378L7.99997 9.4425L3.80466 13.6378C3.54431 13.8982 3.1223 13.8982 2.86195 13.6378C2.6016 13.3775 2.6016 12.9554 2.86195 12.6951L7.05726 8.49979L2.86195 4.30447C2.6016 4.04412 2.6016 3.62212 2.86195 3.36177C3.1223 3.10142 3.54431 3.10142 3.80466 3.36177L7.99997 7.55708L12.1953 3.36177Z" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <h1 class="text-[16px] font-medium text-white">С возвращением</h1>
+
+      <p
+        class="mt-[6px] flex justify-center text-[14px] font-normal text-white/72"
+      >
+        Войдите, чтобы получить доступ к своему аккаунту.
+      </p>
+    </header>
+
+    <main class="modal__content" id="modal-1-content">
+      <div class="mt-[24px]">
+        <div class="flex flex-col gap-y-[6px]">
+          <div
+            class="flex h-[40px] transition-all duration-200 items-center gap-x-[7px] rounded-[8px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[14px] py-[12px] backdrop-blur-[48px]"
+          >
+            <svg id="authEmail_icon" class="transition-colors duration-200 text-white/24 size-[14px]" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.33332 3.99984C9.33332 5.2885 8.28865 6.33317 6.99999 6.33317C5.71133 6.33317 4.66666 5.2885 4.66666 3.99984C4.66666 2.71117 5.71133 1.6665 6.99999 1.6665C8.28865 1.6665 9.33332 2.71117 9.33332 3.99984Z" fill="currentColor" />
+            <path d="M11.0833 10.9998C11.0833 12.2885 9.25515 13.3332 6.99999 13.3332C4.74483 13.3332 2.91666 12.2885 2.91666 10.9998C2.91666 9.71117 4.74483 8.6665 6.99999 8.6665C9.25515 8.6665 11.0833 9.71117 11.0833 10.9998Z" fill="currentColor" />
+            </svg>
+
+            <input
+                id="authEmail"
+              placeholder="Логин"
+              type="text"
+              class="w-full bg-none text-white placeholder:bg-none focus:outline-none"
+            />
+          </div>
+
+          <div
+            class="flex transition-all duration-200 h-[40px] items-center gap-x-[7px] rounded-[8px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[14px] py-[12px] ring-[1px] ring-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] backdrop-blur-[48px]"
+          >
+            <svg id="authPass_icon" class="transition-colors duration-200 text-white/24 size-[14px]" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7 1.6665C10.4409 1.6665 10.8391 3.83116 10.8391 5.46168V6.64219C12.2894 6.81648 12.6875 7.51952 12.6875 9.39743V10.5219C12.6875 12.7709 12.1188 13.3332 9.84375 13.3332H4.15625C1.88125 13.3332 1.3125 12.7709 1.3125 10.5219V9.39743C1.3125 7.51952 1.71063 6.81648 3.16094 6.64219V5.46168C3.16094 3.83116 3.55906 1.6665 7 1.6665ZM5.12879 9.5605C4.96955 9.40308 4.71937 9.35252 4.50894 9.44245C4.435 9.47056 4.37808 9.5099 4.32121 9.5605C4.27002 9.61673 4.23023 9.67862 4.20179 9.74609C4.17337 9.81355 4.15625 9.8866 4.15625 9.95968C4.15625 10.1059 4.21884 10.252 4.32121 10.3589C4.37808 10.4095 4.435 10.4488 4.50894 10.4769C4.57718 10.505 4.65108 10.5219 4.725 10.5219C4.87287 10.5219 5.02073 10.4601 5.12879 10.3589C5.23117 10.252 5.29375 10.1059 5.29375 9.95968C5.29375 9.8866 5.27663 9.81355 5.24821 9.74609C5.21977 9.67862 5.17998 9.61673 5.12879 9.5605ZM7.40379 9.5605C7.18767 9.35247 6.80665 9.35247 6.59621 9.5605C6.49384 9.66733 6.43125 9.80787 6.43125 9.95968C6.43125 10.0328 6.44837 10.1058 6.47679 10.1733C6.50523 10.2407 6.54502 10.3026 6.59621 10.3589C6.70427 10.4601 6.84644 10.5219 7 10.5219C7.14787 10.5219 7.29573 10.4601 7.40379 10.3589C7.45498 10.3026 7.49477 10.2407 7.52321 10.1733C7.55163 10.1058 7.56875 10.0328 7.56875 9.95968C7.56875 9.80787 7.50617 9.66733 7.40379 9.5605ZM9.67879 9.5605C9.46835 9.35247 9.08734 9.35247 8.87121 9.5605C8.76884 9.66733 8.70625 9.80787 8.70625 9.95968C8.70625 10.1115 8.76884 10.252 8.87121 10.3589C8.97927 10.4601 9.12713 10.5219 9.275 10.5219C9.42288 10.5219 9.57073 10.4601 9.67879 10.3589C9.78117 10.252 9.84375 10.1059 9.84375 9.95968C9.84375 9.92594 9.83833 9.88647 9.83264 9.84712C9.82695 9.81342 9.81525 9.77979 9.79821 9.74609C9.78684 9.71239 9.76982 9.67864 9.74711 9.65055C9.72436 9.61682 9.70154 9.58861 9.67879 9.5605ZM7 2.50988C4.52025 2.50988 4.01406 3.6906 4.01406 5.46168V6.58618H9.98594V5.46168C9.98594 3.6906 9.47975 2.50988 7 2.50988Z" fill="currentColor"/>
+            </svg>
+
+            <input
+                id="authPass"
+              placeholder="Пароль"
+              type="password"
+              class="w-full bg-none text-white placeholder:bg-none focus:outline-none"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-[12px]">
+        <div class="flex items-center justify-between">
+          <label
+            class="inline-flex cursor-pointer items-center select-none"
+          >
+            <input type="checkbox" class="peer sr-only" />
+            <div
+              class="absolute ml-[2px] flex size-[14px] items-center opacity-0 peer-checked:opacity-100"
+            >
+              <img
+                src="/assets/checkmark.svg"
+                class="size-[10px] transition"
+              />
+            </div>
+            <div
+              class="peer-checked:szie-[14px] flex size-[14px] items-center justify-center rounded-[3px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] from-[#B29DFF] to-[#957CF3] backdrop-blur-[48px] peer-checked:border-0 peer-checked:border-transparent peer-checked:bg-gradient-to-br"
+            ></div>
+
+            <span
+              class="ml-[6px] text-[14px] font-medium text-white/48 transition peer-checked:text-white"
+            >
+              Запомнить меня
+            </span>
+          </label>
+          <a
+            href="#"
+            class="inline-block bg-gradient-to-b from-[#B29DFF] to-[#957CF3] bg-clip-text text-[14px] font-semibold text-transparent"
+          >
+            Забыли пароль?
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="modal__footer mt-[24px]">
+        <div class="mx-auto flex items-center justify-center mb-[24px]">
+        <div class="g-recaptcha" style="align-self: center;" data-sitekey="6LehLrYrAAAAACwIS0g8Zl9qnt6AuE14IEXFVnWx" data-callback="javascriptCallback"></div>
+        </div>
+        <div class="mx-auto flex items-center justify-center loader-block">
+        <div class="loader"></div>
+        </div>
+
+      <div class="mx-auto flex items-center justify-center gap-x-[6px]">
+        <button
+          id="btnLogin"
+          class="outline3 mx-auto flex h-[40px] w-full cursor-pointer items-center justify-center gap-x-[6px]  rounded-[6px] bg-[linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] text-[16px] font-medium text-white"
+        >
+          <img src="/assets/signup_white.svg" class="size-[14px]" />
+          Войти
+        </button>
+
+        <button
+          data-micromodal-close
+          data-micromodal-trigger="modal-reg"
+          class="mx-auto flex h-[40px] w-[210px] cursor-pointer items-center justify-center gap-x-[6px] rounded-[6px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] text-[16px] font-medium text-white/48 backdrop-blur-[48px]"
+        >
+          <img src="/assets/footer_login.svg" class="size-[14px]" />
+          Регистрация
+        </button>
+      </div>
+    </footer>
+  </div>
+</div>
+</div>
+
+
+<div
+class="modal micromodal-slide relative z-20"
+id="modal-buy"
+aria-hidden="true"
+>
+<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+<!-- min-h-[337px] -->
+  <div
+    class="relative mx-auto min-h-[240px] w-[508px] rounded-[12px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0.02)_100%)] p-[24px] backdrop-blur-[48px] md:max-w-[508px]"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-1-title"
+  >
+    <header class="mb-[16px] items-center text-center">
+      <button
+        class="absolute top-[25px] right-[25px] h-[16px] w-[16px] cursor-pointer"
+        data-micromodal-close
+      >
+        <svg class="h-full w-full text-white transition-all duration-200 opacity-[0.48] hover:opacity-[1] hover:text-[#B29DFF]" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.1953 3.36177C12.4556 3.10142 12.8776 3.10142 13.138 3.36177C13.3983 3.62212 13.3983 4.04412 13.138 4.30447L8.94268 8.49979L13.138 12.6951L13.1836 12.7459C13.3971 13.0077 13.3821 13.3937 13.138 13.6378C12.8939 13.8819 12.5079 13.8969 12.2461 13.6834L12.1953 13.6378L7.99997 9.4425L3.80466 13.6378C3.54431 13.8982 3.1223 13.8982 2.86195 13.6378C2.6016 13.3775 2.6016 12.9554 2.86195 12.6951L7.05726 8.49979L2.86195 4.30447C2.6016 4.04412 2.6016 3.62212 2.86195 3.36177C3.1223 3.10142 3.54431 3.10142 3.80466 3.36177L7.99997 7.55708L12.1953 3.36177Z" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <h1 class="text-[16px] font-medium text-white" id="paymentProductName">Продукт</h1>
+
+      <p
+        class="mt-[6px] flex justify-center text-[14px] font-normal text-white/72"
+      >
+        Введите свои платежные реквизиты для мгновенного доступа.
+      </p>
+    </header>
+
+    <main class="modal__content" id="modal-1-content">
+      <div class="mt-[24px]">
+        <div
+          class="grid grid-cols-2 justify-between gap-[8px] md:grid-cols-3"
+        >
+        <button
+          data-id="Skydonate"
+          data-gateway="TINKOFF"
+            class="group btn-pay"
+          >
+            <img
+              src="/assets/pays/sberpay.svg"
+              alt="Sber pay"
+              class="h-[24px] w-[80px] opacity-48 group-[.btn-pay-active]:opacity-100 transition-all duration-200"
+            />
+          </button>
+          
+          <button
+          data-id="Skydonate"
+          data-gateway="TINKOFF"
+            class="group btn-pay"
+          >
+            <img
+              src="/assets/pays/T-Bank.svg"
+              alt="TINKOFF"
+              class="h-[24px] w-[80px] opacity-48 group-[.btn-pay-active]:opacity-100 transition-all duration-200"
+            />
+          </button>
+          
+          <button
+          data-id="Funpay"
+          data-gateway="funpay"
+            class="group btn-pay"
+          >
+            <img
+              src="/assets/pays/funpay.svg"
+              alt="TINKOFF"
+              class="h-[24px] w-[80px] opacity-48 group-[.btn-pay-active]:opacity-100 transition-all duration-200"
+            />
+          </button>
+          
+          <button
+          data-id="Skydonate"
+          data-gateway="MELANGE"
+            class="group btn-pay text-white"
+          >
+            <img
+              src="/assets/pays/visa-and-mastercard.png"
+              alt="card EUR"
+              class="h-[24px] w-[80px] opacity-48 group-[.btn-pay-active]:opacity-100 transition-all duration-200"
+            />
+          </button>
+          
+          
+        </div>
+      </div>
+
+      <div class="mt-[24px]">
+        <div
+          class="transition-all duration-200 flex h-[40px] items-center gap-x-[7px] rounded-[8px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[14px] py-[13px] backdrop-blur-[48px]"
+        >
+          <svg id="buyPromocode_icon"  class="transition-colors duration-200 text-white/24 size-[14px]" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.4251 6.81166C12.6526 6.81166 12.8334 6.62849 12.8334 6.39806V5.84857C12.8334 3.42607 12.1042 2.6875 9.71258 2.6875H4.28758C1.89591 2.6875 1.16675 3.42607 1.16675 5.84857V6.12627C1.16675 6.3567 1.34758 6.53986 1.57508 6.53986C2.10008 6.53986 2.52591 6.97119 2.52591 7.50296C2.52591 8.03472 2.10008 8.46014 1.57508 8.46014C1.34758 8.46014 1.16675 8.6433 1.16675 8.87373V9.15144C1.16675 11.5739 1.89591 12.3125 4.28758 12.3125H9.71258C12.1042 12.3125 12.8334 11.5739 12.8334 9.15144C12.8334 8.921 12.6526 8.73784 12.4251 8.73784C11.9001 8.73784 11.4742 8.30652 11.4742 7.77475C11.4742 7.24298 11.9001 6.81166 12.4251 6.81166ZM5.25008 5.65358C5.57092 5.65358 5.83342 5.91947 5.83342 6.24444C5.83342 6.56941 5.57675 6.83529 5.25008 6.83529C4.92925 6.83529 4.66675 6.56941 4.66675 6.24444C4.66675 5.91947 4.92341 5.65358 5.25008 5.65358ZM8.75008 9.78956C8.42342 9.78956 8.16091 9.52367 8.16091 9.1987C8.16091 8.87374 8.42342 8.60785 8.74425 8.60785C9.06508 8.60785 9.32758 8.87374 9.32758 9.1987C9.32758 9.52367 9.07675 9.78956 8.75008 9.78956ZM9.27508 6.0081L5.34925 9.98454C5.26175 10.0732 5.15092 10.1145 5.04008 10.1145C4.92925 10.1145 4.81841 10.0732 4.73091 9.98454C4.56175 9.81319 4.56175 9.52958 4.73091 9.35823L8.65675 5.38179C8.82592 5.21044 9.10592 5.21044 9.27508 5.38179C9.44425 5.55314 9.44425 5.83675 9.27508 6.0081Z" fill="currentColor"/>
+          </svg>
+
+          <input
+            placeholder="Промокод"
+            type="text"
+            id="buyPromocode"
+            class="w-full bg-none text-white placeholder:bg-none focus:outline-none"
+          />
+        </div>
+      </div>
+        <p
+            id="promocodeInfo"
+          class="mt-[6px] flex justify-center text-[14px] font-normal text-white/72"
+        ></p>
+
+    </main>
+
+    <footer class="modal__footer mt-[24px]">
+        <div class="mx-auto flex items-center justify-center loader-block">
+        <div class="loader"></div>
+        </div>
+
+      <div class="mx-auto flex items-center justify-center gap-x-[6px]">
+        <button
+          id="btnBuy"
+          class="mx-auto flex h-[40px] w-full cursor-pointer items-center justify-center gap-x-[6px] rounded-[6px] bg-[linear-gradient(180deg,_#B29DFF_0%,_#957CF3_100%)] text-[16px] font-medium text-white outline3"
+        >
+          <img src="/assets/buy.svg" class="size-[14px]" />
+          Купить
+        </button>
+      </div>
+    </footer>
+  </div>
+</div>
+</div>
+
+<div
+class="modal micromodal-slide relative z-20"
+id="modal-reg"
+aria-hidden="true"
+>
+<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+  <div
+    class="relative mx-auto min-h-[337px] max-w-[508px] rounded-[12px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0.02)_100%)] p-[24px] backdrop-blur-[48px] md:w-[508px]"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-1-title"
+  >
+    <header class="mb-[16px] items-center text-center">
+      <button
+        class="absolute top-[25px] right-[25px] h-[16px] w-[16px] cursor-pointer"
+        data-micromodal-close
+      >
+        <svg class="h-full w-full text-white transition-all duration-200 opacity-[0.48] hover:opacity-[1] hover:text-[#B29DFF]" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.1953 3.36177C12.4556 3.10142 12.8776 3.10142 13.138 3.36177C13.3983 3.62212 13.3983 4.04412 13.138 4.30447L8.94268 8.49979L13.138 12.6951L13.1836 12.7459C13.3971 13.0077 13.3821 13.3937 13.138 13.6378C12.8939 13.8819 12.5079 13.8969 12.2461 13.6834L12.1953 13.6378L7.99997 9.4425L3.80466 13.6378C3.54431 13.8982 3.1223 13.8982 2.86195 13.6378C2.6016 13.3775 2.6016 12.9554 2.86195 12.6951L7.05726 8.49979L2.86195 4.30447C2.6016 4.04412 2.6016 3.62212 2.86195 3.36177C3.1223 3.10142 3.54431 3.10142 3.80466 3.36177L7.99997 7.55708L12.1953 3.36177Z" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <h1 class="text-[16px] font-medium text-white">Восстановление пароля</h1>
+
+      <p
+        class="mt-[6px] flex justify-center text-[14px] font-normal text-white/72"
+      >
+        Пароль будет отправлен на почту
+      </p>
+    </header>
+
+    <main class="modal__content" id="modal-1-content">
+      <div class="mt-[24px]">
+        <div class="flex flex-col gap-y-[6px]">
+          <div
+            class="flex h-[40px] items-center gap-x-[7px] rounded-[8px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] px-[14px] py-[12px] backdrop-blur-[48px]"
+          >
+            <img src="/assets/email.svg" class="size-[14px]" />
+            <input
+            id="resetEmail"
+              placeholder="Email"
+              type="email"
+              class="w-full bg-none text-white placeholder:bg-none focus:outline-none"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="modal__footer mt-[24px]">
+      <div class="mx-auto flex items-center justify-center mb-[24px]">
+        <div class="g-recaptcha" style="align-self: center;" data-sitekey="6LehLrYrAAAAACwIS0g8Zl9qnt6AuE14IEXFVnWx" data-callback="javascriptCallback"></div>
+        </div>
+        <div class="mx-auto flex items-center justify-center loader-block">
+        <div class="loader"></div>
+      </div>
+
+      <div class="mx-auto flex items-center justify-center gap-x-[6px]">
+        <button
+            id="btnReset"
+          class="mx-auto flex h-[40px] w-full cursor-pointer items-center justify-center gap-x-[6px] rounded-[6px] border-[1.5px] border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.06)_0%,_rgba(255,_255,_255,_0.04)_100%)] text-[16px] font-medium text-white/48 backdrop-blur-[48px]"
+        >
+          <img src="/assets/footer_login.svg" class="size-[14px]" />
+          Восстановить пароль
+        </button>
+      </div>
+    </footer>
+  </div>
+</div>
+</div>
+
+<!-- <script src="https://hvh.moscow/splide.min.js"></script> -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // const splide = new Splide(".splide", {
+  //   type: "loop",
+  //   perPage: window.innerWidth < 700 ? 3 : 8,
+  //   arrows: false,
+  //   pagination: false,
+  //   pauseOnHover: false,
+  //   pauseOnFocus: false,
+  //   interval: 0,
+  //   //speed: 100000,
+  //   autoplay: true,
+  // }).mount();
+
+  document.querySelectorAll('input').forEach((input) => {
+    if (!input.attributes.id) return;
+    const el = document.getElementById(input.attributes.id.value + '_icon');
+    if (!el) return;
+    input.addEventListener('focus', () => {
+      el.classList.add('highlight-icon');
+      input.parentElement.classList.add('highlight-input');
+    });
+
+    input.addEventListener('blur', () => {
+      el.classList.remove('highlight-icon');
+      input.parentElement.classList.remove('highlight-input');
+    });
+  });
+
+  const buttonMonthPay = document.getElementById('btnMonthPay');
+  const buttonYearPay = document.getElementById('btnYearPay');
+  if (buttonMonthPay)
+    buttonMonthPay.addEventListener('click', () => {
+      buttonMonthPay.classList.add('active-tab');
+      buttonYearPay.classList.remove('active-tab');
+      document.querySelectorAll('.price-group').forEach(priceGroup => {
+        priceGroup.children[0].textContent = priceGroup.children[0].dataset.month;
+        priceGroup.children[2].textContent = '/ в месяц';
+      });
+    });
+  if (buttonYearPay)
+    buttonYearPay.addEventListener('click', () => {
+      buttonYearPay.classList.add('active-tab');
+      buttonMonthPay.classList.remove('active-tab');
+      document.querySelectorAll('.price-group').forEach(priceGroup => {
+        priceGroup.children[0].textContent = priceGroup.children[0].dataset.year;
+        priceGroup.children[2].textContent = '/ в год';
+      });
+    });
+  
+    function showLoader(loaderSelector, btnSelector){
+        document.querySelector(loaderSelector).style.display = 'block';
+        document.querySelector(btnSelector).style.display = 'none';
+    }
+    function hideLoader(loaderSelector, btnSelector){
+        document.querySelector(loaderSelector).style.display = 'none';
+        document.querySelector(btnSelector).style.display = 'block';
+    }
+
+    document.getElementById('btnLogin')?.addEventListener("click", function() {
+        let formData = new FormData();
+        formData.append('signin', '1');
+        formData.append('email', document.querySelector("#authEmail").value);
+        formData.append('password', document.querySelector("#authPass").value);
+        formData.append('g-recaptcha-response', document.querySelector("#modal-login [name='g-recaptcha-response']").value);
+        showLoader("#modal-login .loader-block", "#btnLogin");
+        fetch('https://hvh.moscow/api/login',
+            {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                    "X-Requested-With": "XMLHttpRequest",
+                },
+            })
+        .then(async function(res){
+            const jsonResponse = await res.json();
+            if (jsonResponse.status){
+                location.href = 'https://hvh.moscow/account';
+            } else {
+                hideLoader("#modal-login .loader-block", "#btnLogin");
+                Toastify({
+                  text: jsonResponse.message,
+                  duration: 8000,
+                  newWindow: true,
+                  close: true,
+                  gravity: "top",
+                  position: "right",
+                  stopOnFocus: true,
+                  style: {
+                    background: "linear-gradient(to right,rgb(129, 58, 58),rgb(116, 48, 48))",
+                  },
+                  onClick: function(){}
+                }).showToast();
+                            }
+        }).catch((error) => {
+            hideLoader("#modal-login .loader-block", "#btnLogin");
+            Toastify({
+              text: error.message,
+              duration: 8000,
+              newWindow: true,
+              close: true,
+              gravity: "top",
+              position: "right",
+              stopOnFocus: true,
+              style: {
+                background: "linear-gradient(to right,rgb(129, 58, 58),rgb(116, 48, 48))",
+              },
+              onClick: function(){}
+            }).showToast();
+        });
+    });
+
+    document.getElementById('btnRegister')?.addEventListener("click", function() {
+        const formData = new FormData();
+        formData.append('signup', '1');
+        formData.append('email', document.querySelector("#regEmail").value);
+        formData.append('login', document.querySelector("#regLogin").value);
+        formData.append('password', document.querySelector("#regPass").value);
+        formData.append('g-recaptcha-response', document.querySelector("#modal-reg [name='g-recaptcha-response']").value);
+        showLoader("#modal-reg .loader-block", "#btnRegister");
+        fetch("https://hvh.moscow/api/register",
+            {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                    "X-Requested-With": "XMLHttpRequest",
+                },
+            })
+        .then(async function(res){
+            const jsonResponse = await res.json();
+            if (jsonResponse.status){
+                location.href = 'https://hvh.moscow/account';
+            } else {
+                hideLoader("#modal-reg .loader-block", "#btnRegister");
+                Toastify({
+                  text: jsonResponse.message,
+                  duration: 8000,
+                  newWindow: true,
+                  close: true,
+                  gravity: "top",
+                  position: "right",
+                  stopOnFocus: true,
+                  style: {
+                    background: "linear-gradient(to right,rgb(129, 58, 58),rgb(116, 48, 48))",
+                  },
+                  onClick: function(){}
+                }).showToast();
+                            }
+        }).catch((error) => {
+            hideLoader("#modal-reg .loader-block", "#btnRegister");
+            Toastify({
+              text: error.message,
+              duration: 8000,
+              newWindow: true,
+              close: true,
+              gravity: "top",
+              position: "right",
+              stopOnFocus: true,
+              style: {
+                background: "linear-gradient(to right,rgb(129, 58, 58),rgb(116, 48, 48))",
+              },
+              onClick: function(){}
+            }).showToast();
+        });
+    });
+
+    document.getElementById('btnReset')?.addEventListener("click", function() {
+        const formData = new FormData();
+        formData.append('email', document.querySelector("#resetEmail").value);
+        formData.append('g-recaptcha-response', document.querySelector("#modal-reset [name='g-recaptcha-response']").value);
+        showLoader("#modal-reset .loader-block", "#btnReset");
+        fetch("https://hvh.moscow/api/resetPassword",
+            {
+                method: "POST",
+                body: formData,
+                headers: {
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                    "X-Requested-With": "XMLHttpRequest",
+                },
+            })
+        .then(async function(res){
+            const jsonResponse = await res.json();
+            if (jsonResponse === "OK"){
+                Toastify({
+                  text: "Письмо выслано на почту!",
+                  duration: 5000,
+                  newWindow: true,
+                  close: true,
+                  gravity: "top",
+                  position: "right",
+                  stopOnFocus: true,
+                  style: {
+                    background: "linear-gradient(to right, #493a81,rgb(63, 48, 116))",
+                  },
+                  onClick: function(){}
+                }).showToast();
+            } else {
+                hideLoader("#modal-reset .loader-block", "#btnReset");
+                Toastify({
+                  text: jsonResponse.message,
+                  duration: 8000,
+                  newWindow: true,
+                  close: true,
+                  gravity: "top",
+                  position: "right",
+                  stopOnFocus: true,
+                  style: {
+                    background: "linear-gradient(to right,rgb(129, 58, 58),rgb(116, 48, 48))",
+                  },
+                  onClick: function(){}
+                }).showToast();
+                            }
+        }).catch((error) => {
+            hideLoader("#modal-reset .loader-block", "#btnReset");
+            Toastify({
+              text: error.message,
+              duration: 8000,
+              newWindow: true,
+              close: true,
+              gravity: "top",
+              position: "right",
+              stopOnFocus: true,
+              style: {
+                background: "linear-gradient(to right,rgb(129, 58, 58),rgb(116, 48, 48))",
+              },
+              onClick: function(){}
+            }).showToast();
+        });
+    });
+});
+</script>
+    </div>
+    <div
+    class="relative z-10 mx-auto mt-[64px] flex grid-cols-3 flex-col items-center justify-between gap-[20px] rounded-[16px] rounded-b-none border-[1px] border-b-0 border-[#35333E] bg-[linear-gradient(180deg,_rgba(255,_255,_255,_0.04)_0%,_rgba(255,_255,_255,_0.02)_100%)] px-[24px] py-[28px] backdrop-blur-[48px] md:container md:mt-[256px] md:grid md:gap-0"
+  >
+    <div class="flex flex-col">
+      <a href="/" class="flex items-center">
+        <img src="/assets/logo.svg" class="h-[32px] w-[32px]" />
+        <div class="ml-[12px] font-semibold text-white">Zenith</div>
+      </a>
+
+      <p
+        class="mt-[12px] text-center text-[10px] font-normal text-white/72 md:text-left md:text-[14px]"
+      >
+        Ультимативный набор инструментов для господства в Minecraft.
+        Спроектирован для высокой производительности, надёжной безопасности и
+        полной неотслеживаемости.
+      </p>
+    </div>
+
+    <span
+      class="flex justify-center gap-[5px] text-[10px] font-normal text-white/48 md:text-[12px]"
+      >©2025 Zenith. 
+      <span class="text-[10px] font-normal text-white/24 md:text-[12px]"
+        >
+        Все права защищены.
+    </span>
+    </span>
+    <div
+      class="flex flex-col items-center justify-between gap-y-[12px] text-[10px] font-medium text-white/48 md:items-end md:text-[14px]"
+    >
+      <a href="#main" class="group flex cursor-pointer items-center gap-x-[6px] transition-colors duration-200 text-white/48 hover:text-[#957cf3]">
+        <svg class="size-[14px]" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.063 4.7307L8.3066 1.75045C7.57253 1.17032 6.42553 1.16464 5.69719 1.74476L1.94078 4.7307C1.40169 5.15726 1.0748 6.01038 1.1895 6.68151L1.91211 10.9699C2.07842 11.9311 2.97881 12.6875 3.95949 12.6875H10.0386C11.0078 12.6875 11.9254 11.914 12.0917 10.9642L12.8143 6.67582C12.9175 6.01038 12.5906 5.15726 12.063 4.7307ZM7.42915 10.4125C7.42915 10.6457 7.23416 10.8391 6.99903 10.8391C6.7639 10.8391 6.56891 10.6457 6.56891 10.4125V8.70625C6.56891 8.47307 6.7639 8.27969 6.99903 8.27969C7.23416 8.27969 7.42915 8.47307 7.42915 8.70625V10.4125Z" fill="currentColor"/>
+        </svg>
+        <span class="group-hover:text-white transition-colors duration-200">Главная</span>
+      </a>
+      <a href="#products" class="group flex cursor-pointer items-center gap-x-[6px] transition-colors duration-200 text-white/48 hover:text-[#957cf3]">
+        <svg class="size-[14px]" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11.2233 3.25483H10.99L9.01829 1.28316C8.86079 1.12566 8.60413 1.12566 8.44079 1.28316C8.28329 1.44066 8.28329 1.69733 8.44079 1.86066L9.83496 3.25483H4.16496L5.55913 1.86066C5.71663 1.70316 5.71663 1.4465 5.55913 1.28316C5.40163 1.12566 5.14496 1.12566 4.98163 1.28316L3.01579 3.25483H2.78246C2.25746 3.25483 1.16663 3.25483 1.16663 4.74816C1.16663 5.314 1.28329 5.68733 1.52829 5.93233C1.66829 6.07816 1.83746 6.154 2.01829 6.19483C2.18746 6.23566 2.36829 6.2415 2.54329 6.2415H11.4566C11.6375 6.2415 11.8066 6.22983 11.97 6.19483C12.46 6.07816 12.8333 5.72816 12.8333 4.74816C12.8333 3.25483 11.7425 3.25483 11.2233 3.25483Z" fill="currentColor"/>
+        <path d="M11.1125 6.99983H2.84079C2.47913 6.99983 2.20496 7.32066 2.26329 7.6765L2.75329 10.6748C2.91663 11.6782 3.35413 12.8332 5.29663 12.8332H8.56913C10.535 12.8332 10.885 11.8473 11.095 10.7448L11.6841 7.694C11.7541 7.33233 11.48 6.99983 11.1125 6.99983ZM6.18913 10.7623C6.18913 10.9898 6.00829 11.1707 5.78663 11.1707C5.55913 11.1707 5.37829 10.9898 5.37829 10.7623V8.83733C5.37829 8.61566 5.55913 8.429 5.78663 8.429C6.00829 8.429 6.18913 8.61566 6.18913 8.83733V10.7623ZM8.68579 10.7623C8.68579 10.9898 8.50496 11.1707 8.27746 11.1707C8.05579 11.1707 7.86913 10.9898 7.86913 10.7623V8.83733C7.86913 8.61566 8.05579 8.429 8.27746 8.429C8.50496 8.429 8.68579 8.61566 8.68579 8.83733V10.7623Z" fill="currentColor" />
+        </svg>
+        <span class="group-hover:text-white transition-colors duration-200">Продукты</span>
+      </a>
+            <div data-micromodal-trigger="modal-login" class="group flex cursor-pointer items-center gap-x-[6px] transition-colors duration-200 text-white/48 hover:text-[#957cf3]">
+        <svg class="size-[14px] " width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.80426 1.1665H8.28684C6.41924 1.1665 5.25199 2.33317 5.25199 4.19984V6.56234H7.84329L6.63518 5.35484C6.54764 5.26734 6.50679 5.1565 6.50679 5.04567C6.50679 4.93484 6.54764 4.824 6.63518 4.7365C6.80443 4.56734 7.08457 4.56734 7.25383 4.7365L9.20897 6.69067C9.37822 6.85984 9.37822 7.13984 9.20897 7.309L7.25383 9.26317C7.08457 9.43234 6.80443 9.43234 6.63518 9.26317C6.46593 9.094 6.46593 8.814 6.63518 8.64484L7.84329 7.43734H5.25199V9.79984C5.25199 11.6665 6.41924 12.8332 8.28684 12.8332H9.79843C11.666 12.8332 12.8333 11.6665 12.8333 9.79984V4.19984C12.8391 2.33317 11.6719 1.1665 9.80426 1.1665Z" fill="currentColor"/>
+        <path d="M1.60434 6.56234C1.36506 6.56234 1.16663 6.76067 1.16663 6.99984C1.16663 7.239 1.36506 7.43734 1.60434 7.43734H5.25199V6.56234H1.60434Z" fill="currentColor" />
+        </svg>
+        <span class="group-hover:text-white transition-colors duration-200">Вход</span>
+      </div>
+          </div>
+  </div>
+</div>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script>
+  let productCode = 1;
+  MicroModal.init({
+    awaitCloseAnimation: true,
+    disableScroll: true,
+    onShow: (modal, el) => {
+        if (modal.id === 'modal-buy'){
+            document.querySelector('#paymentProductName').innerText = el.attributes['data-product-name'].value;
+            productCode = el.attributes['data-product-id'].value;
+        }
+    },
+  });
+  
+  document.addEventListener('DOMContentLoaded', () => {
+      let paymentId = 'Skydonate';
+      let paymentGateway = 'TINKOFF';
+      let paymentPromo = '';
+      document.querySelectorAll('.btn-pay')?.forEach(function(payment__button) {
+          payment__button.addEventListener("click", function() {
+              document.querySelectorAll('.btn-pay').forEach(box => {
+                  box.classList.remove('btn-pay-active');
+              });
+              this.classList.add('btn-pay-active');
+              paymentId = this.attributes['data-id'].value;
+              paymentGateway = this.attributes['data-gateway'].value;
+              paymentPromo = document.querySelector('#buyPromocode').value;
+          });
+      });
+      
+      document.querySelector('#btnBuy')?.addEventListener("click", function() {
+        //this.removeEventListener('click', arguments.callee, false);
+        window.location.href = 'https://hvh.moscow/account/payment/go' + '/' + paymentId + '/' + productCode + '?gateway=' + paymentGateway + '&promocode=' + paymentPromo;
+      });
+      
+      function debounce(fn, delay) {
+        let timeout;
+        return function (...args) {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => fn.apply(this, args), delay);
+        };
+      }
+
+      const buyPromocodeInput = document.getElementById("buyPromocode");
+      const promocodeInfoMessagebox = document.getElementById("promocodeInfo");
+      if (buyPromocodeInput && promocodeInfoMessagebox){
+          async function checkPromocode(code) {
+            if (!code.trim()) {
+              promocodeInfoMessagebox.textContent = "";
+              return;
+            }
+
+            try {
+              const response = await fetch(`/checkPromocode?promocode=${encodeURIComponent(code)}`);
+              if (!response.ok) {
+                throw new Error("Ошибка сервера");
+              }
+              const data = await response.json();
+              promocodeInfoMessagebox.textContent = data.message;
+            } catch (err) {
+              promocodeInfoMessagebox.textContent = "Ошибка проверки промокода";
+            }
+          }
+
+          // навешиваем debounce с задержкой 500 мс
+          buyPromocodeInput.addEventListener("input", debounce((e) => {
+            checkPromocode(e.target.value);
+          }, 500));
+      }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/skypl1ne.png
+Status: 200
+Content-Type: image/png
+File-Extension: png
+Size: 20246 bytes
+Scan-Time: 2025-10-11T19:20:53.055597
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:53 GMT",
+  "Content-Type": "image/png",
+  "Content-Length": "20246",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 03 Sep 2025 17:57:47 GMT",
+  "ETag": "\"68b8819b-4f16\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

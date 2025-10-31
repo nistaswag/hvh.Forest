@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/about.svg
+Status: 200
+Content-Type: image/svg+xml
+File-Extension: svg
+Size: 1439 bytes
+Scan-Time: 2025-10-11T19:20:49.792989
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:50 GMT",
+  "Content-Type": "image/svg+xml",
+  "Content-Length": "1439",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 09 Jul 2025 13:46:31 GMT",
+  "ETag": "\"686e72b7-59f\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:24 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

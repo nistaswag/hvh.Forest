@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/intuitive.svg
+Status: 200
+Content-Type: image/svg+xml
+File-Extension: svg
+Size: 1251 bytes
+Scan-Time: 2025-10-11T19:20:42.724824
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:43 GMT",
+  "Content-Type": "image/svg+xml",
+  "Content-Length": "1251",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 09 Jul 2025 13:46:22 GMT",
+  "ETag": "\"686e72ae-4e3\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

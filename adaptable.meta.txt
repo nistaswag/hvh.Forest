@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/adaptable.svg
+Status: 200
+Content-Type: image/svg+xml
+File-Extension: svg
+Size: 1508 bytes
+Scan-Time: 2025-10-11T19:20:53.659689
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:53 GMT",
+  "Content-Type": "image/svg+xml",
+  "Content-Length": "1508",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 09 Jul 2025 13:46:31 GMT",
+  "ETag": "\"686e72b7-5e4\"",
+  "Expires": "Mon, 10 Nov 2025 11:48:34 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

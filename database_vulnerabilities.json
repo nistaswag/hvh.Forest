@@ -1,0 +1,44 @@
+[
+  {
+    "type": "database",
+    "service": "MYSQL",
+    "port": 3306,
+    "vulnerability": "Open database port",
+    "severity": "MEDIUM"
+  },
+  {
+    "type": "database",
+    "service": "POSTGRESQL",
+    "port": 5432,
+    "vulnerability": "Open database port",
+    "severity": "MEDIUM"
+  },
+  {
+    "type": "database",
+    "service": "MONGODB",
+    "port": 27017,
+    "vulnerability": "Open database port",
+    "severity": "MEDIUM"
+  },
+  {
+    "type": "database",
+    "service": "REDIS",
+    "port": 6379,
+    "vulnerability": "Open database port",
+    "severity": "MEDIUM"
+  },
+  {
+    "type": "database",
+    "service": "SQLSERVER",
+    "port": 1433,
+    "vulnerability": "Open database port",
+    "severity": "MEDIUM"
+  },
+  {
+    "type": "database",
+    "service": "ORACLE",
+    "port": 1521,
+    "vulnerability": "Open database port",
+    "severity": "MEDIUM"
+  }
+]

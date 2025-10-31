@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/success_yellow.svg
+Status: 200
+Content-Type: image/svg+xml
+File-Extension: svg
+Size: 933 bytes
+Scan-Time: 2025-10-11T19:20:50.502857
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:50 GMT",
+  "Content-Type": "image/svg+xml",
+  "Content-Length": "933",
+  "Connection": "keep-alive",
+  "Last-Modified": "Fri, 11 Jul 2025 17:39:01 GMT",
+  "ETag": "\"68714c35-3a5\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

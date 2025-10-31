@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/footer_login.svg
+Status: 200
+Content-Type: image/svg+xml
+File-Extension: svg
+Size: 931 bytes
+Scan-Time: 2025-10-11T19:20:36.522308
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:36 GMT",
+  "Content-Type": "image/svg+xml",
+  "Content-Length": "931",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 09 Jul 2025 13:46:21 GMT",
+  "ETag": "\"686e72ad-3a3\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

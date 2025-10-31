@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/maskirovka3.png
+Status: 200
+Content-Type: image/png
+File-Extension: png
+Size: 267247 bytes
+Scan-Time: 2025-10-11T19:20:39.716621
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:39 GMT",
+  "Content-Type": "image/png",
+  "Content-Length": "267247",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 03 Sep 2025 20:29:45 GMT",
+  "ETag": "\"68b8a539-413ef\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

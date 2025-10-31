@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/screenshot-client.png
+Status: 200
+Content-Type: image/png
+File-Extension: png
+Size: 184115 bytes
+Scan-Time: 2025-10-11T19:20:58.710060
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:58 GMT",
+  "Content-Type": "image/png",
+  "Content-Length": "184115",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 03 Sep 2025 17:39:36 GMT",
+  "ETag": "\"68b87d58-2cf33\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/assets/signup_white.svg
+Status: 200
+Content-Type: image/svg+xml
+File-Extension: svg
+Size: 2557 bytes
+Scan-Time: 2025-10-11T19:20:54.950871
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:20:55 GMT",
+  "Content-Type": "image/svg+xml",
+  "Content-Length": "2557",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 09 Jul 2025 13:46:26 GMT",
+  "ETag": "\"686e72b2-9fd\"",
+  "Expires": "Mon, 10 Nov 2025 15:19:23 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}

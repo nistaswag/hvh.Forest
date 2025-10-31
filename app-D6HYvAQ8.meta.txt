@@ -1,0 +1,20 @@
+URL: https://hvh.moscow/build/assets/app-D6HYvAQ8.css
+Status: 200
+Content-Type: text/css
+File-Extension: css
+Size: 40088 bytes
+Scan-Time: 2025-10-11T19:20:59.931647
+Headers:
+{
+  "Date": "Sat, 11 Oct 2025 16:21:00 GMT",
+  "Content-Type": "text/css",
+  "Content-Length": "40088",
+  "Connection": "keep-alive",
+  "Last-Modified": "Wed, 24 Sep 2025 17:27:50 GMT",
+  "ETag": "\"68d42a16-9c98\"",
+  "Expires": "Mon, 10 Nov 2025 15:29:37 GMT",
+  "Cache-Control": "max-age=2592000, public, max-age=2592000, immutable",
+  "Server": "SkySystem",
+  "X-Cache-Status": "HIT",
+  "Accept-Ranges": "bytes"
+}
